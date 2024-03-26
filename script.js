@@ -8,6 +8,14 @@ for (let i = 1; i <= 16; i++) {
     }
 }
 
+const divs = document.querySelectorAll(".container div");
+
+divs.forEach(item => {
+    item.addEventListener("mouseover", e => {
+        e.target.style.backgroundColor = "blue";
+    })
+});
+
 // for(let i = 1; i <= 16; i++) {
 //     console.log(i);
 //     for(let x = 1; x <= 16; x++) {
