@@ -2,13 +2,7 @@ const container = document.querySelector(".container");
 const button = document.querySelector("#grid-size-button");
 let gridSize = 16;
 
-for (let i = 1; i <= 16; i++) {
-    for (let x = 1; x <= 16; x++) {
-        const div = document.createElement("div");
-        div.className = `cell num-${i}-${x}`;
-        container.appendChild(div);
-    }
-}
+drawGrid(gridSize);
 
 button.addEventListener("click", e => {
     gridSize = prompt("Input a number of squares per side: ", 16);
@@ -19,15 +13,8 @@ button.addEventListener("click", e => {
 
     container.textContent = "";
 
-    for (let i = 1; i <= gridSize; i++) {
-        for (let x = 1; x <= gridSize; x++) {
-            const div = document.createElement("div");
-            div.className = `cell num-${i}-${x}`;
-            container.appendChild(div);
-        }
-    }
+    drawGrid(gridSize);
 });
-
 
 
 const divs = document.querySelectorAll(".container div");
@@ -37,3 +24,15 @@ divs.forEach(item => {
         e.target.style.backgroundColor = "blue";
     })
 });
+
+function drawGrid(size) {
+    for (let i = 1; i <= size; i++) {
+        for (let x = 1; x <= size; x++) {
+            const div = document.createElement("div");
+            div.className = `cell num-${i}-${x}`;
+            container.appendChild(div);
+        }
+    }
+
+    container.style.width = `${40 * size}px`;
+}
