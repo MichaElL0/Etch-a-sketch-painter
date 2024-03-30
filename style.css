@@ -19,3 +19,26 @@
     background-color: lightblue;
     border: 1px solid black;
 }
+
+#grid-size-button {
+    text-align: center;
+    margin: 50px 0 50px 0;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: teal;
+}
+
+#grid-size-button:hover {
+    background-color: slategray;
+    color: antiquewhite;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,4 +1,6 @@
 const container = document.querySelector(".container");
+const button = document.querySelector("#grid-size-button");
+let gridSize = null;
 
 for (let i = 1; i <= 16; i++) {
     for (let x = 1; x <= 16; x++) {
@@ -16,9 +18,8 @@ divs.forEach(item => {
     })
 });
 
-// for(let i = 1; i <= 16; i++) {
-//     console.log(i);
-//     for(let x = 1; x <= 16; x++) {
-//         console.log("\t" + x);
-//     }
-// }
+
+
+button.addEventListener("click", e => {
+    gridSize = prompt("Input a number of squares per side: ");
+});
