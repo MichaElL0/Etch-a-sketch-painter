@@ -17,13 +17,7 @@ button.addEventListener("click", e => {
 });
 
 
-const divs = document.querySelectorAll(".container div");
 
-divs.forEach(item => {
-    item.addEventListener("mouseover", e => {
-        e.target.style.backgroundColor = "blue";
-    })
-});
 
 function drawGrid(size) {
     for (let i = 1; i <= size; i++) {
@@ -33,6 +27,14 @@ function drawGrid(size) {
             container.appendChild(div);
         }
     }
+
+    const divs = document.querySelectorAll(".container div");
+
+    divs.forEach(item => {
+        item.addEventListener("mouseover", e => {
+            e.target.style.backgroundColor = "blue";
+        })
+    });
 
     container.style.width = `${40 * size}px`;
 }
