@@ -16,9 +16,6 @@ button.addEventListener("click", e => {
     drawGrid(gridSize);
 });
 
-
-
-
 function drawGrid(size) {
     for (let i = 1; i <= size; i++) {
         for (let x = 1; x <= size; x++) {
@@ -37,4 +34,15 @@ function drawGrid(size) {
     });
 
     container.style.width = `${40 * size}px`;
+
+    if(container.style.width > window.innerWidth) {
+        console.log(true);
+    }
+    else {
+        
+    }
+    
+
+    console.log(container.style.width + " container width");
+    console.log(window.innerWidth + " window width");
 }
