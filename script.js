@@ -33,20 +33,9 @@ function drawGrid(size) {
         })
     });
 
+    let cell = document.querySelector(".cell");
+    let cellWidth = cell.offsetWidth;
+    let cellHeight = cell.offsetHeight;
 
-    container.style.width = `${30 * size}px`;
-    
-
-    const cell = document.querySelector(".cell");
-
-    if(parseInt(container.style.width) > window.innerWidth) {
-        console.log("Make cells smaller");
-        
-        cell.style.width = `${20}px`;
-        cell.style.height = `${20}px`;
-    }
-    else {
-        //
-    }
-    
+    container.style.width = `${cellHeight * size}px`;
 }
