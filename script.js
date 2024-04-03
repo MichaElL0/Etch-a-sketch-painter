@@ -31,13 +31,17 @@ function drawGrid(size) {
     let opacity = 40;
 
     let randomNumber = Math.floor(Math.random() * 255);
+    let cell = document.querySelector(".cell");
 
     divs.forEach(item => {
         item.addEventListener("mouseover", e => {
             e.target.style.backgroundColor = `hsl(${randomNumber}, 100%, ${opacity}%)`;
         })
     });
+
     
-    let cell = document.querySelector(".cell");
+    
     container.style.width = `${cell.offsetHeight* size}px`;
+
+    
 }
