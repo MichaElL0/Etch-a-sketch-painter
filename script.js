@@ -32,10 +32,7 @@ function drawGrid(size) {
             e.target.style.backgroundColor = "blue";
         })
     });
-
+    
     let cell = document.querySelector(".cell");
-    let cellWidth = cell.offsetWidth;
-    let cellHeight = cell.offsetHeight;
-
-    container.style.width = `${cellHeight * size}px`;
+    container.style.width = `${cell.offsetHeight* size}px`;
 }
