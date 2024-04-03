@@ -33,16 +33,20 @@ function drawGrid(size) {
         })
     });
 
-    container.style.width = `${40 * size}px`;
 
-    if(container.style.width > window.innerWidth) {
-        console.log(true);
-    }
-    else {
-        
-    }
+    container.style.width = `${30 * size}px`;
     
 
-    console.log(container.style.width + " container width");
-    console.log(window.innerWidth + " window width");
+    const cell = document.querySelector(".cell");
+
+    if(parseInt(container.style.width) > window.innerWidth) {
+        console.log("Make cells smaller");
+        
+        cell.style.width = `${20}px`;
+        cell.style.height = `${20}px`;
+    }
+    else {
+        //
+    }
+    
 }
