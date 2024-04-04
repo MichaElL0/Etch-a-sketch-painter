@@ -15,9 +15,9 @@
 This is a etch a sketch type of website where you can draw anything on the grid with the size you can choose
 
 ### Screenshot
-(zdjecie.jpg)
+!(zdjecie.jpg)
 
-![Design preview for the Social links profile coding challenge](Zrzut%20ekranu%202024-03-20%20190047.jpg)
+![Design preview for the Social links profile coding challenge](zdjecie.jpg)
 
 ###The pgae
 https://michaell0.github.io/Social-Links-Challange/
