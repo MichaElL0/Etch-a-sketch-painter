@@ -35,5 +35,5 @@ function drawGrid(size) {
         })
     });
 
-    container.style.width = `${cell.offsetHeight* size}px`;
+    container.style.width = `${cell.offsetHeight * size}px`;
 }
