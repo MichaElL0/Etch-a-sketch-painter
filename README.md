@@ -1,7 +1,5 @@
 # Etch-a-sketch-type-of-something
 
- 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -15,19 +13,18 @@
 This is a etch a sketch type of website where you can draw anything on the grid with the size you can choose
 
 ### Screenshot
-!(zdjecie.jpg)
-
-![Design preview for the Social links profile coding challenge](zdjecie.jpg)
+![](zdjecie.jpg)
 
 ###The pgae
-https://michaell0.github.io/Social-Links-Challange/
+https://michaell0.github.io/Etch-a-sketch-type-of-something/
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Javascript
 
 ### What I learned
-
+How to dynamically change website with Javascipt
 
