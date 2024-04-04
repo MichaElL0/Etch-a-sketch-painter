@@ -26,22 +26,14 @@ function drawGrid(size) {
     }
 
     const divs = document.querySelectorAll(".container div");
-
-    //Math.floor(Math.random() * 255)
-    let opacity = 40;
-
-    let randomNumber = Math.floor(Math.random() * 255);
     let cell = document.querySelector(".cell");
 
     divs.forEach(item => {
+        let opacity = 100;
         item.addEventListener("mouseover", e => {
-            e.target.style.backgroundColor = `hsl(${randomNumber}, 100%, ${opacity}%)`;
+            e.target.style.backgroundColor = `hsl(${Math.floor(Math.random() * 255)}, 100%, ${opacity-=10}%)`;
         })
     });
 
-    
-    
     container.style.width = `${cell.offsetHeight* size}px`;
-
-    
 }
