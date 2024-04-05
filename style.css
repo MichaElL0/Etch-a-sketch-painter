@@ -12,26 +12,33 @@
     align-items: center;
     width: 600px;
     height: 600px;
-    border: 1px dotted black;
+    border: 3px solid #694894;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 600px;
 }
 
 .cell {
-    background-color: lightgray;
+    background-color: #FCFCFC;
 }
 
-#grid-size-button {
+.button {
     text-align: center;
     margin: 40px 0 50px 0;
     padding: 10px;
     font-size: 20px;
     font-weight: 500;
     border-radius: 10px;
-    color: aliceblue;
-    background-color: teal;
+    color: #FCFCFC;
+    background-color: #ED6A5A;
     border: none;
 }
 
-#grid-size-button:hover {
+.button:hover {
     background-color: slategray;
     color: antiquewhite;
 }
@@ -41,4 +48,5 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #9BC1BC;
 }
