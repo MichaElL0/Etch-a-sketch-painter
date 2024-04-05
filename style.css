@@ -10,14 +10,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 960px;
+    width: 600px;
+    height: 600px;
 }
 
 .cell {
-    width: 25px;
-    height: 25px;
     background-color: lightgray;
-    /* border: 1px solid black; */
 }
 
 #grid-size-button {

@@ -21,12 +21,12 @@ function drawGrid(size) {
     for (let i = 1; i <= size; i++) {
         for (let x = 1; x <= size; x++) {
             const div = document.createElement("div");
-            div.className = `cell num-${i}-${x}`;
+            div.className = `cell`;
+            div.setAttribute("style", `width: ${600 / size}px; height: ${600 / size}px;`);
             container.appendChild(div);
         }
     }
     
-let cell = document.querySelector(".cell");
 
 const divs = document.querySelectorAll(".container div");
 
@@ -36,7 +36,4 @@ divs.forEach(item => {
         e.target.style.backgroundColor = `hsl(${Math.floor(Math.random() * 255)}, 100%, ${opacity-=10}%)`;
     })
 });
-
-container.style.width = `${cell.offsetHeight * size}px`;
-
 }
