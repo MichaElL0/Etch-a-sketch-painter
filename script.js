@@ -1,8 +1,9 @@
 const container = document.querySelector(".container");
-const button = document.querySelector("#grid-size-button");
 let gridSize = 16;
 
 drawGrid(gridSize);
+
+const button = document.querySelector("#grid-size-button");
 
 button.addEventListener("click", e => {
     gridSize = prompt("Input a number of squares per side: ", 16);
@@ -10,9 +11,9 @@ button.addEventListener("click", e => {
         alert("Number can't be larger than 100!");
         gridSize = 16;
     }
-
+    
     container.textContent = "";
-
+    
     drawGrid(gridSize);
 });
 
@@ -24,16 +25,18 @@ function drawGrid(size) {
             container.appendChild(div);
         }
     }
+    
+let cell = document.querySelector(".cell");
 
-    const divs = document.querySelectorAll(".container div");
-    let cell = document.querySelector(".cell");
+const divs = document.querySelectorAll(".container div");
 
-    divs.forEach(item => {
-        let opacity = 100;
-        item.addEventListener("mouseover", e => {
-            e.target.style.backgroundColor = `hsl(${Math.floor(Math.random() * 255)}, 100%, ${opacity-=10}%)`;
-        })
-    });
+divs.forEach(item => {
+    let opacity = 100;
+    item.addEventListener("mouseover", e => {
+        e.target.style.backgroundColor = `hsl(${Math.floor(Math.random() * 255)}, 100%, ${opacity-=10}%)`;
+    })
+});
 
-    container.style.width = `${cell.offsetHeight * size}px`;
+container.style.width = `${cell.offsetHeight * size}px`;
+
 }

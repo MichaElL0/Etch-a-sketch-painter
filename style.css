@@ -17,12 +17,12 @@
     width: 25px;
     height: 25px;
     background-color: lightgray;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #grid-size-button {
     text-align: center;
-    margin: 50px 0 50px 0;
+    margin: 40px 0 50px 0;
     padding: 10px;
     font-size: 20px;
     font-weight: 500;
