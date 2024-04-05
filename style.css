@@ -12,6 +12,7 @@
     align-items: center;
     width: 600px;
     height: 600px;
+    border: 1px dotted black;
 }
 
 .cell {
@@ -27,6 +28,7 @@
     border-radius: 10px;
     color: aliceblue;
     background-color: teal;
+    border: none;
 }
 
 #grid-size-button:hover {

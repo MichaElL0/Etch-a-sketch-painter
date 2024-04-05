@@ -1,14 +1,15 @@
 const container = document.querySelector(".container");
+const button = document.querySelector("#grid-size-button");
 let gridSize = 16;
 
 drawGrid(gridSize);
 
-const button = document.querySelector("#grid-size-button");
+console.log(container.clientHeight);
 
 button.addEventListener("click", e => {
     gridSize = prompt("Input a number of squares per side: ", 16);
-    if(gridSize > 100) {
-        alert("Number can't be larger than 100!");
+    if(gridSize > 100 || gridSize < 2) {
+        alert("Number must be between 2 and 100!");
         gridSize = 16;
     }
     
@@ -22,7 +23,7 @@ function drawGrid(size) {
         for (let x = 1; x <= size; x++) {
             const div = document.createElement("div");
             div.className = `cell`;
-            div.setAttribute("style", `width: ${600 / size}px; height: ${600 / size}px;`);
+            div.setAttribute("style", `width: ${(container.clientHeight) / size}px; height: ${(container.clientWidth) / size}px;`);
             container.appendChild(div);
         }
     }
