@@ -36,11 +36,17 @@
     color: #FCFCFC;
     background-color: #ED6A5A;
     border: none;
+    box-shadow: #663023 4px 4px ;
 }
 
 .button:hover {
-    background-color: rgb(169, 116, 204);
+    background-color: #e09664;
     color: antiquewhite;
+}
+
+.button:active {
+    box-shadow: none;
+    background-color: #663023;
 }
 
 #rainbow-button {
@@ -58,4 +64,5 @@ body {
 
 .button-clicked {
     background-color: slategray;
+    box-shadow: none;
 }
