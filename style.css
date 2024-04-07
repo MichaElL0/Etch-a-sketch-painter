@@ -12,7 +12,7 @@
     align-items: center;
     width: 600px;
     height: 600px;
-    border: 3px solid #694894;
+    border: 3px solid #ED6A5A;
 }
 
 .buttons {
@@ -41,6 +41,11 @@
 .button:hover {
     background-color: slategray;
     color: antiquewhite;
+}
+
+#rainbow-button {
+    color: rgb(15, 2, 41);
+    font-weight: 600;
 }
 
 body {

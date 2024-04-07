@@ -45,3 +45,9 @@ resetButton.addEventListener("click", e => {
     })
 });
 
+const rainbowButton = document.querySelector("#rainbow-button");
+
+document.body.addEventListener("mousemove", e => {
+    rainbowButton.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 250)`;
+});
+
