@@ -13,7 +13,7 @@
 This is a etch a sketch type of website where you can draw anything on the grid with the size you can choose
 
 ### Screenshot
-![](zdjecie.jpg)
+![](image.png)
 
 ### The page
 Preview it live here: https://michaell0.github.io/Etch-a-sketch-type-of-something/
