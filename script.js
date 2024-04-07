@@ -77,7 +77,7 @@ rainbowButton.addEventListener("click", e => {
 });
 
 //Change color of rainbow button based on X and Y position of mouse
-window.addEventListener("mousemove", e => {
+document.body.addEventListener("mousemove", e => {
     rainbowButton.style.color = `rgb(${e.offsetX}, ${e.offsetY}, 220)`;
 });
 
