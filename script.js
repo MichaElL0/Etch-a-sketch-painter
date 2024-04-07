@@ -3,9 +3,12 @@ const gridSizeButton = document.querySelector("#grid-size-button");
 const resetButton = document.querySelector("#reset-button");
 const rainbowButton = document.querySelector("#rainbow-button");
 const opacityButton = document.querySelector("#opacity-button");
+
 let gridSize = 16;
 let isRainbow = true;
 let isOpacity = true;
+let rainbowCounter = 1;
+let opacityCounter = 1;
 
 drawGrid(gridSize);
 
@@ -57,8 +60,6 @@ resetButton.addEventListener("click", e => {
     })
 });
 
-let rainbowCounter = 1;
-
 //Check if button is clicked or not and based on that add logic and style
 rainbowButton.addEventListener("click", e => {
     rainbowCounter++;
@@ -79,8 +80,6 @@ rainbowButton.addEventListener("click", e => {
 window.addEventListener("mousemove", e => {
     rainbowButton.style.color = `rgb(${e.offsetX}, ${e.offsetY}, 220)`;
 });
-
-let opacityCounter = 1;
 
 //Check if button is clicked or not and based on that add logic and style
 opacityButton.addEventListener("click", e => {
