@@ -1,6 +1,8 @@
 const container = document.querySelector(".container");
 const gridSizeButton = document.querySelector("#grid-size-button");
 const resetButton = document.querySelector("#reset-button");
+const rainbowButton = document.querySelector("#rainbow-button");
+const opacityButton = document.querySelector("#opacity-button");
 let gridSize = 16;
 
 drawGrid(gridSize);
@@ -45,9 +47,39 @@ resetButton.addEventListener("click", e => {
     })
 });
 
-const rainbowButton = document.querySelector("#rainbow-button");
+let rainbowCounter = 2;
 
-document.body.addEventListener("mousemove", e => {
-    rainbowButton.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 250)`;
+rainbowButton.addEventListener("click", e => {
+    if(opacityCounter % 2 == 0) {
+        console.log(opacityCounter);
+        //is unclicked
+        rainbowButton.classList.remove("button-clicked");
+    }
+    else if(opacityCounter % 2 != 0) {
+        console.log(opacityCounter);
+        //is clicked
+        rainbowButton.classList.add("button-clicked");
+    }
+});
+
+window.addEventListener("mousemove", e => {
+    rainbowButton.style.color = `rgb(${e.offsetX}, ${e.offsetY}, 220)`;
+});
+
+let opacityCounter = 1;
+
+opacityButton.addEventListener("click", e => {
+    opacityCounter++;
+
+    if(opacityCounter % 2 == 0) {
+        console.log(opacityCounter);
+        //is unclicked
+        opacityButton.classList.remove("button-clicked");
+    }
+    else if(opacityCounter % 2 != 0) {
+        console.log(opacityCounter);
+        //is clicked
+        opacityButton.classList.add("button-clicked");
+    }
 });
 

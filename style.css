@@ -39,7 +39,7 @@
 }
 
 .button:hover {
-    background-color: slategray;
+    background-color: rgb(169, 116, 204);
     color: antiquewhite;
 }
 
@@ -54,4 +54,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #9BC1BC;
+}
+
+.button-clicked {
+    background-color: slategray;
 }
