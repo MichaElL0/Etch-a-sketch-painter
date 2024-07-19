@@ -26,5 +26,5 @@ Preview it live here: https://michaell0.github.io/Etch-a-sketch-type-of-somethin
 - Javascript
 
 ### What I learned
-How to dynamically change website with Javascipt
+How to dynamically change a website with Javascript
 
